@@ -4,23 +4,20 @@
         <tr>
             <th>Action</th>
             <th>Nome</th>
-            <th>Vagão</th>
-            <th>Categoria</th>
-            <th>Destinatario</th>
-            <th>Remetente</th>
+            <th>Apelido</th>
+            <th>Ocupaão</th>
         </tr>
         </thead>
         <tbody>
 
-{{--        @foreach($employees as $employee)--}}
-{{--            <tr>--}}
-{{--                <td align="center"><a href="/employees/{{ $employee->id }}/edit"><i class="feather icon-edit"></i></a></td>--}}
-{{--                <td>{{$employee->name}}</td>--}}
-{{--                <td>{{$employee->employeeType()->name}}</td>--}}
-{{--                <td>{{$employee->email}}</td>--}}
-{{--                <td>{{$employee->gender}}</td>--}}
-{{--                <td>{{$employee->telefone}}</td>--}}
-{{--        @endforeach--}}
+       @foreach($passagers as $passager)
+            <tr>--}}
+                <td align="center"><a href="/employees/{{ $passager->id }}/edit"><i class="feather icon-edit"></i></a></td>
+                <td>{{$passager->name}}</td>
+                <td>{{$passager->surname}}</td>
+                <td>{{$passager->occupation}}</td>
+
+        @endforeach
         </tbody>
     </table>
 </div>

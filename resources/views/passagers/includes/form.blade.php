@@ -10,20 +10,14 @@
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label class="control-label">Apelifo <span class="required">*</span></label>
+                    <label class="control-label">Apelido <span class="required">*</span></label>
                     <input class="form-control border-form-control"  required="required" name="surname" value="" placeholder="Insira apelido" type="text">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label class="control-label">Ocupacao <span class="required">*</span></label>
+                    <label class="control-label">Ocupação <span class="required">*</span></label>
                     <input class="form-control border-form-control"  required="required" name="occupation" value="" placeholder="Insira apelido" type="text">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label class="control-label">Ocupacao <span class="required">*</span></label>
-                    <input class="form-control border-form-control"  required="required" name="user_id" value="1" placeholder="Insira apelido" type="text">
                 </div>
             </div>
         </div>
