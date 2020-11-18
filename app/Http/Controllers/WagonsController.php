@@ -36,7 +36,18 @@ class WagonsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'capacity'         => '',
+            'tara'       => '',
+            'gross_weight'         => '',
+            'train_id'         => '',
+        ]);
+
+        $recipient = Wagon::create($request->only(['train_id', 'gross_weight','tara','capacity'])); //adicionar os dados
+
+        $recipient->save();
+
+        return redirect()->to('/passagers');
     }
 
     /**

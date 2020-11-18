@@ -35,7 +35,17 @@ class TarinsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+     $request->validate([
+         'name'         => '',
+         'max_speed'       => '',
+         'user_id'         => '',
+     ]);
+
+        $recipient = Train::create($request->only(['max_speed', 'name','user_id'])); //adicionar os dados
+
+        $recipient->save();
+
+        return redirect()->to('/passagers');
     }
 
     /**
