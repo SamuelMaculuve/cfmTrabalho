@@ -1,4 +1,4 @@
-<form method="POST" action="{{ route('recipients.store') }}">
+<form method="POST" action="{{ route('person-contacts.store') }}">
     @csrf
     <div class="row">
         <div class="col-sm-8">

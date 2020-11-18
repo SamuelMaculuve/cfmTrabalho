@@ -41,9 +41,13 @@ class PersonContactsController extends Controller
             'email'       => '',
             'fax'   => '',
             'telephone'         => '',
-            'user_id'=>'',
+            'user_id'         => '',
         ]);
-        $live = Lives::create($request->only(['telephone', 'name','telephone','fax','user_id'])); //adicionar os dados
+        $recipient = PersonContact::create($request->only(['telephone', 'name','user_id','fax','email'])); //adicionar os dados
+
+        $recipient->save();
+
+        return redirect()->to('/recipients');
     }
 
     /**

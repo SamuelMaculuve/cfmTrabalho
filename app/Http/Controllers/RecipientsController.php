@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Lives;
+use App\PersonContact;
 use App\Recipient;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -16,7 +17,8 @@ class RecipientsController extends Controller
      */
     public function index()
     {
-        return view('recipient.index');
+        $personContacts = PersonContact::all();
+        return view('recipient.index',compact('personContacts'));
     }
 
     /**
@@ -40,16 +42,14 @@ class RecipientsController extends Controller
 
         $request->validate([
             'name'         => '',
-            'email'       => '',
-            'fax'   => '',
             'telephone'         => '',
-            'user_id'         => '',
+            'person_contacts_id'         => '',
         ]);
-        $recipient = Recipient::create($request->only(['telephone', 'name','user_id','fax','email'])); //adicionar os dados
+        $recipient = Recipient::create($request->only(['telephone', 'name','person_contacts_id'])); //adicionar os dados
 
         $recipient->save();
 
-        return redirect()->to('/recipients')->with(['message' => 'Curso adicionado com sucesso']);
+        return redirect()->to('/recipients');
     }
 
     /**
