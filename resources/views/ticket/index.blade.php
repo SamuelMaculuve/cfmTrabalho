@@ -24,7 +24,7 @@
                                 <div class="tab-pane fade show active" id="e-inbox" role="tabpanel">
                                     <div class="mail-body">
                                         @include('ticket.includes.breadcrumb')
-                                        @include('ticket.includes.table-ticket')
+                                        @include('ticket.includes.table-ticket', $tickets)
                                     </div>
                                 </div>
 
