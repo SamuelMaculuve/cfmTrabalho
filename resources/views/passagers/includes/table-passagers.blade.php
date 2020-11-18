@@ -11,7 +11,7 @@
         <tbody>
 
        @foreach($passagers as $passager)
-            <tr>--}}
+            <tr>
                 <td align="center"><a href="/employees/{{ $passager->id }}/edit"><i class="feather icon-edit"></i></a></td>
                 <td>{{$passager->name}}</td>
                 <td>{{$passager->surname}}</td>
