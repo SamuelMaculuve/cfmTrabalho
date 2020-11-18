@@ -24,7 +24,7 @@
                                 <div class="tab-pane fade show active" id="e-inbox" role="tabpanel">
                                     <div class="mail-body">
                                         @include('wagons.includes.breadcrumb')
-                                        @include('wagons.includes.table-merchandise')
+                                        @include('wagons.includes.table-wagons')
                                     </div>
                                 </div>
 
@@ -52,7 +52,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="new-merchandise" role="tabpanel">
+                                <div class="tab-pane fade" id="new-wagons" role="tabpanel">
                                     <div class="mail-body">
                                         @include('wagons.includes.breadcrumb')
                                         <div class="mail-body-content">

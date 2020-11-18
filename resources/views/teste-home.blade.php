@@ -93,7 +93,7 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="card new-cust-card">
                         <div class="card-header">
-                            <h5><span style="color: red">Reclamacoes Pedentes</span></h5>
+                            <h5><span style="color: red">Dados estatisticos</span></h5>
                             <div class="card-header-right">
                                 <ul class="list-unstyled card-option">
                                     <li class="first-opt"><i class="feather icon-chevron-left open-card-option"></i></li>
@@ -168,7 +168,7 @@
                 <div class="col-xl-8 col-md-6">
                     <div class="card table-card">
                         <div class="card-header">
-                            <h5>Respostas de Reclamacoes</h5>
+                            <h5>Dados estatisticos</h5>
                             <div class="card-header-right">
                                 <ul class="list-unstyled card-option">
                                     <li class="first-opt"><i class="feather icon-chevron-left open-card-option"></i></li>

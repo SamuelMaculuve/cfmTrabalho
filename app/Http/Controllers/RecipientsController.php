@@ -17,8 +17,8 @@ class RecipientsController extends Controller
      */
     public function index()
     {
-        $personContacts = PersonContact::all();
-        return view('recipient.index',compact('personContacts'));
+        $recipients = Recipient::all();
+        return view('recipient.index',compact('recipients'));
     }
 
     /**

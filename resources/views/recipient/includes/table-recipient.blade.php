@@ -4,23 +4,19 @@
         <tr>
             <th>Action</th>
             <th>Nome</th>
-            <th>Tipo de Funcionario</th>
-            <th>Email</th>
-            <th>Género</th>
             <th>Telefone</th>
+            <th>person_contacts_id</th>
         </tr>
         </thead>
         <tbody>
 
-{{--        @foreach($employees as $employee)--}}
-{{--            <tr>--}}
-{{--                <td align="center"><a href="/employees/{{ $employee->id }}/edit"><i class="feather icon-edit"></i></a></td>--}}
-{{--                <td>{{$employee->name}}</td>--}}
-{{--                <td>{{$employee->employeeType()->name}}</td>--}}
-{{--                <td>{{$employee->email}}</td>--}}
-{{--                <td>{{$employee->gender}}</td>--}}
-{{--                <td>{{$employee->telefone}}</td>--}}
-{{--        @endforeach--}}
+        @foreach($recipients as $recipient)
+            <tr>
+                <td align="center"><a href="/employees/{{ $recipient->id }}/edit"><i class="feather icon-edit"></i></a></td>
+                <td>{{$recipient->name}}</td>
+                <td>{{$recipient->telephone}}</td>
+                <td>{{$recipient->person_contacts_id}}</td>
+        @endforeach
         </tbody>
     </table>
 </div>

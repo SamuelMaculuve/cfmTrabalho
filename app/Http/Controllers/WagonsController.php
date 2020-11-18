@@ -15,7 +15,8 @@ class WagonsController extends Controller
      */
     public function index()
     {
-        return view('wagons.index');
+        $vagao = Wagon::all();
+        return view('wagons.index',compact('vagao'));
     }
 
     /**
