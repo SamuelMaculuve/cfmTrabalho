@@ -2,7 +2,7 @@
     <div class="navbar-wrapper">
         <div class="navbar-logo">
             <a href="/">
-                <img style="width: 140px;" class="img-fluid ml-3" src="{{ asset('files/assets/images/logotipo.png') }}" alt="Theme-Logo" />
+                <img style="width: 140px;" class="img-fluid ml-3" src="{{ asset('img/cfm-logo.png') }}" alt="Theme-Logo" />
             </a>
             <a class="mobile-menu" id="mobile-collapse" href="#!">
                 <i class="feather icon-menu icon-toggle-right"></i>
