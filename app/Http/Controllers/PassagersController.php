@@ -15,7 +15,9 @@ class PassagersController extends Controller
      */
     public function index()
     {
-        return view('passagers.index');
+        $passagers = Passager::all();
+
+        return view('passagers.index',compact('passagers'));
     }
 
     /**
