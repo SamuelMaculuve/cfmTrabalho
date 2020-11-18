@@ -5,7 +5,7 @@
             <th>Action</th>
             <th>Nome</th>
             <th>Apelido</th>
-            <th>Ocupaão</th>
+            <th>Ocupção</th>
         </tr>
         </thead>
         <tbody>

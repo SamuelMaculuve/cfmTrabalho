@@ -36,7 +36,13 @@ class TicketsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $ticket = new Ticket();
+        $ticket->from = $request->from;
+        $ticket->to = $request->to;
+        $ticket->price = $request->price;
+        $ticket->save();
+
+        return view('ticket.index');
     }
 
     /**
