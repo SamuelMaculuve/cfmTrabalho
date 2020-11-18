@@ -15,7 +15,7 @@ class WagonsController extends Controller
      */
     public function index()
     {
-        return view('wagon.index');
+        return view('wagons.index');
     }
 
     /**

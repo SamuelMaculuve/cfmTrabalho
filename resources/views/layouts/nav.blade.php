@@ -48,7 +48,7 @@
                 </li>
 
                 <li class="pcoded-hasmenu">
-                    <a href="/breakdowns" class="waves-effect waves-dark">
+                    <a href="{{ route('tarins.index') }}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="fa fa-american-sign-language-interpreting"></i></span>
                         <span class="pcoded-mtext">Comboio</span>
 
@@ -56,32 +56,32 @@
                 </li>
 
                 <li class="pcoded-hasmenu">
-                    <a href="/tariffs" class="waves-effect waves-dark">
+                    <a href="{{ route('travels.index') }}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="fa fa-balance-scale"></i></span>
                         <span class="pcoded-mtext">Viagem</span>
                     </a>
                 </li>
                 <li class="pcoded-hasmenu">
-                    <a href="/employees" class="waves-effect waves-dark">
+                    <a href="{{ route('employees.index') }}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="fa fa-american-sign-language-interpreting"></i></span>
                         <span class="pcoded-mtext">Funcionários</span>
                     </a>
                 </li>
 
                 <li class="pcoded-hasmenu">
-                    <a href="/transferences" class="waves-effect waves-dark">
+                    <a href="" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="fa fa-ticket"></i></span>
                         <span class="pcoded-mtext">Realizacao</span>
                     </a>
                 </li>
                 <li class="pcoded-hasmenu">
-                    <a href="/permissions_roles" class="waves-effect waves-dark">
+                    <a href="{{ route('passagers.index') }}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="fa fa-unlock-alt"></i></span>
                         <span class="pcoded-mtext">Passageiros</span>
                     </a>
                 </li>
                 <li class="pcoded-hasmenu">
-                    <a href="/permissions_roles" class="waves-effect waves-dark">
+                    <a href="" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="fa fa-unlock-alt"></i></span>
                         <span class="pcoded-mtext">Transporte</span>
                     </a>

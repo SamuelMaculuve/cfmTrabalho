@@ -33,6 +33,8 @@ Route::resource('merchandises',  'MerchandisesController');
 Route::resource('category',  'CategoryController');
 Route::resource('travels',  'TravelsController');
 Route::resource('wagons',  'WagonsController');
+Route::resource('passagers',  'PassagersController');
+Route::resource('tarins',  'TarinsController');
 Route::resource('train-travel',  'TrainTravelController');
 Route::resource('tickets',  'TicketsController');
 Route::resource('passager-train',  'PassagerTrainsController');
